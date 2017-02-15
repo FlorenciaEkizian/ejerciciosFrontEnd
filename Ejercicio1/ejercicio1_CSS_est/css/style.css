@@ -1,0 +1,88 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+	font-family: 'Courier New';
+	background-color: #efefef;
+}
+
+#container {
+	width: 960px;
+	margin: 10px auto;
+	padding: 20px;
+	position: relative;
+  	height: auto;
+    overflow: auto;
+    background-color: #fff;
+    border-style: double;
+}
+
+#header, #content {
+	width: 100%;
+}
+
+#logo {
+	width: 150px;
+	margin: 10px auto 25px auto;
+}
+
+.column {
+    width: 300px;
+    margin: 10px;
+    float: left;
+}
+
+h3, .center, p{
+	text-align: center;
+}
+
+/* menu */
+
+ul#navigation {
+	width: 570px;
+	padding: 15px;
+	margin: 0px auto;
+	text-align: center;
+	border-top: black solid 2px;
+	border-bottom: black solid 1px;
+}
+
+#navigation li{
+	display: inline;
+	margin: 0px 20px;
+	}
+
+a{
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+}
+
+/* -- */
+
+
+.red{
+	color:#cc3333;
+}	
+
+#navigation a:hover{
+	color: #cc3333;
+}	
+
+h1{
+	text-align: center;
+}
+
+.bold{
+	font-weight: bold
+}
+
+p, li{
+	font-size: 13px;
+	line-height: 18px;
+}
+
+
