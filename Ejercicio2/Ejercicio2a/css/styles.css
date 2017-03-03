@@ -57,7 +57,7 @@ nav a{
 	border-radius: 5px;
 }
 
-#columns{
+.columns{
 	width: 280px;
 	float: left;
 	padding-right: 20px;
