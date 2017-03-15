@@ -6,7 +6,8 @@
     }
 
     #slides {
-      display: none
+      display: none;
+      position: relative;
     }
 
     #slides .slidesjs-navigation {
@@ -14,19 +15,30 @@
     }
 
     #slides .slidesjs-previous {
-      margin-right: 5px;
-      float: left;
-    }
+      left: 0;
+      }
 
     #slides .slidesjs-next {
-      margin-right: 5px;
-      float: left;
+      right: 0;
+      }
+
+    #slides .slidesjs-previous, #slides .slidesjs-next {
+      position: absolute;
+      top: 50%;
+      z-index: 15;
+      background: rgba(225, 225, 255, .8); 
+      padding: 10px; 
     }
 
     .slidesjs-pagination {
-      margin: 6px 0 0;
-      float: right;
+      position: absolute;
       list-style: none;
+      bottom: 20px;
+      z-index: 15;
+      background: rgba(225, 225, 255, .8);      
+      left: 45%;
+      margin: 0;
+      padding: 10px 20px 10px 20px;
     }
 
     .slidesjs-pagination li {
@@ -94,6 +106,15 @@
       .container {
         width: auto
       }
+
+      #slides .slidesjs-previous, #slides .slidesjs-next {
+      top: 40%;   
+      }
+
+      .slidesjs-pagination {     
+      left: 35%;
+    }
+
     }
 
     /* For smaller displays like laptops */
@@ -106,6 +127,6 @@
     /* For larger displays */
     @media (min-width: 1200px) {
       .container {
-        width: 1170px
+        width: 1000px
       }
     }
